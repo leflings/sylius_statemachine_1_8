@@ -14,7 +14,7 @@ winzou_state_machine:
             completed: ~
         transitions:
             address:
-                from: [cart, addressed, shipping_selected, shipping_skipped, payment_selected, payment_skipped]
+                from: [cart, addressed, shipping_selected, shipping_skipped]
                 to: addressed
             skip_shipping:
                 from: [addressed]
